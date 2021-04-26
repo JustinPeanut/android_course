@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="spinnerTitle">请选择身份</string>
+    <string-array name="pro">
+        <item>学生</item>
+        <item>老师</item>
+    </string-array>
+</resources>
+
+
+
+

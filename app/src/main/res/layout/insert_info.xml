@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:anroid = "http://schemas.android.com/apk/res/android"
+    anroid:layout_height="match_parent"
+    anroid:layout_width="match_parent"
+    anroid:orientation="vertical">
+
+    <LinearLayout
+        anroid:layout_width="match_parent"
+        anroid:layout_height="50dp"
+        anroid:background="#A52A2A"
+        anroid:orientation="horizontal">
+
+        <ImageView
+            anroid:layout_width="50dp"
+            anroid:layout_height="50dp"
+            anroid:layout_marginLeft="10dp"
+            anroid:src="@drawable/add_button"/>
+
+        <TextView
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="match_parent"
+            anroid:gravity="center_vertical"
+            anroid:text="增加学生"
+            anroid:textColor="#FFF"
+            anroid:textSize="18sp" />
+
+    </LinearLayout>
+    <ImageView
+        anroid:layout_width="120dp"
+        anroid:layout_height="120dp"
+        anroid:src="@drawable/user_add"
+        anroid:layout_gravity="center"
+        />
+
+    <LinearLayout
+        anroid:layout_height="wrap_content"
+        anroid:layout_width="match_parent"
+        anroid:layout_marginTop="20dp"
+        anroid:gravity="center"
+        anroid:orientation="horizontal">
+        <TextView
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:text="学号:"
+            anroid:textSize="20dp"
+            anroid:textColor="#000"
+            anroid:layout_marginRight="12dp"
+            />
+        <EditText
+            anroid:layout_width="200dp"
+            anroid:id="@+id/iuserNumber"
+            anroid:layout_height="wrap_content"
+            anroid:textSize="20dp"
+            anroid:inputType="number"
+            anroid:hint="请输入学号"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        anroid:layout_height="wrap_content"
+        anroid:layout_width="match_parent"
+        anroid:layout_marginTop="20dp"
+        anroid:gravity="center"
+        anroid:orientation="horizontal">
+        <TextView
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:text="密码:"
+            anroid:textSize="20dp"
+            anroid:textColor="#000"
+            anroid:layout_marginRight="12dp"
+            />
+        <EditText
+            anroid:id="@+id/ipassword"
+            anroid:layout_width="200dp"
+            anroid:layout_height="wrap_content"
+            anroid:textSize="20dp"
+            anroid:inputType="textPassword"
+            anroid:hint="请输入密码"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        anroid:layout_width="wrap_content"
+        anroid:layout_height="wrap_content"
+        anroid:orientation="vertical"
+        anroid:layout_gravity="center">
+
+        <Spinner
+            anroid:id="@+id/insert_info"
+            anroid:layout_width="100dp"
+            anroid:layout_height="wrap_content"
+            anroid:layout_gravity="center"
+            anroid:layout_marginTop="10dp"
+            anroid:prompt="@string/spinnerTitle"
+            anroid:entries="@array/pro"/>
+
+        <Button
+            anroid:id="@+id/doInsert"
+            anroid:layout_width="200dp"
+            anroid:layout_height="wrap_content"
+            anroid:layout_gravity="center"
+            anroid:textSize="18dp"
+            anroid:text="添加"
+            anroid:textColor="#1C1C1C"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

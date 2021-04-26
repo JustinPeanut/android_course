@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<students>
+    <student id="1">
+        <username>222</username>
+        <password>qqqq</password>
+    </student>
+
+    <student id="2">
+        <username>111</username>
+        <password>xxxx</password>
+    </student>
+
+</students>

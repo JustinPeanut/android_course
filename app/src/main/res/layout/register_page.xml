@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:anroid = "http://schemas.android.com/apk/res/android"
+    anroid:layout_height="match_parent"
+    anroid:layout_width="match_parent"
+    anroid:orientation="vertical">
+
+    <TextView
+        anroid:id="@+id/textView2"
+        anroid:layout_width="match_parent"
+        anroid:layout_height="100dp"
+        anroid:gravity="center"
+        anroid:layout_marginTop="10dp"
+        anroid:textSize="30dp"
+        anroid:text="江西理工大学"/>
+
+    <ImageView
+        anroid:layout_width="120dp"
+        anroid:layout_height="120dp"
+        anroid:src="@drawable/register"
+        anroid:layout_gravity="center"
+        />
+
+    <LinearLayout
+        anroid:layout_height="wrap_content"
+        anroid:layout_width="match_parent"
+        anroid:layout_marginTop="20dp"
+        anroid:gravity="center"
+        anroid:orientation="horizontal">
+        <TextView
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:text="学号:"
+            anroid:textSize="20dp"
+            anroid:textColor="#000"
+            anroid:layout_marginRight="12dp"
+            />
+        <EditText
+            anroid:layout_width="200dp"
+            anroid:id="@+id/ruserNumber"
+            anroid:layout_height="wrap_content"
+            anroid:textSize="20dp"
+            anroid:inputType="number"
+            anroid:hint="请输入学号"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        anroid:layout_height="wrap_content"
+        anroid:layout_width="match_parent"
+        anroid:layout_marginTop="20dp"
+        anroid:gravity="center"
+        anroid:orientation="horizontal">
+        <TextView
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:text="密码:"
+            anroid:textSize="20dp"
+            anroid:textColor="#000"
+            anroid:layout_marginRight="12dp"
+            />
+        <EditText
+            anroid:id="@+id/rpassword"
+            anroid:layout_width="200dp"
+            anroid:layout_height="wrap_content"
+            anroid:textSize="20dp"
+            anroid:inputType="textPassword"
+            anroid:hint="请输入密码"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        anroid:layout_width="match_parent"
+        anroid:layout_height="wrap_content"
+        anroid:layout_marginTop="20dp">
+
+        <RadioGroup
+            anroid:id="@+id/radioGroup"
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:orientation="horizontal">
+
+
+            <RadioButton
+                anroid:id="@+id/student"
+                anroid:layout_width="wrap_content"
+                anroid:layout_height="wrap_content"
+                anroid:layout_marginLeft="80dp"
+                anroid:checked="true"
+                anroid:text="学生" />
+
+            <RadioButton
+                anroid:id="@+id/teacher"
+                anroid:layout_width="wrap_content"
+                anroid:layout_height="wrap_content"
+                anroid:layout_marginLeft="70dp"
+                anroid:checked="false"
+                anroid:text="老师" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        anroid:layout_width="wrap_content"
+        anroid:layout_height="wrap_content"
+        anroid:layout_gravity="center"
+        anroid:layout_marginTop="50dp"
+        anroid:orientation="horizontal">
+
+
+
+        <Button
+            anroid:id="@+id/doRegister"
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:layout_marginRight="25dp"
+            anroid:onClick="onClick"
+            anroid:textSize="18dp"
+            anroid:textColor="#2E8B57"
+            anroid:text="注册用户"/>
+        <Button
+            anroid:id="@+id/showInfo"
+            anroid:textSize="18dp"
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:textColor="#FF6A6A"
+            anroid:text="显示保存的信息"/>
+    </LinearLayout>
+
+</LinearLayout>
